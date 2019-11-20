@@ -1,1 +1,6 @@
 /* Acá va tu código */
+body{
+  text-align: center;
+  background-color: azure;
+  padding: 10%;
+}

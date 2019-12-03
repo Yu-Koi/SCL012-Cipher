@@ -1,6 +1,121 @@
-/* Acá va tu código */
-body{
+body {
+  font-family: 'Roboto Slab', serif;
+  background: white;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+h1{
+  color: white;
   text-align: center;
-  background-color: azure;
-  padding: 10%;
+  font-size: 80px;
+  font-style: italic;
+  text-emphasis-position: center;
+  text-shadow: 6px 6px 0px black;
+  margin-top: 10px;
+  background: rgb(172, 112, 112);
+  background-image: url("inicio-pantalla.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-orientation: unset;
+  border-radius: 20px;
+  height: 300px;
+  width:1420px; 
+}
+
+h2{
+  height: 50px;
+  width: 900px;
+  border-radius: 20px;
+  margin: 20px;
+  margin-top: 30px;
+  margin-left: 200px;
+  background: rgba(248,80,50,1);
+  background-image: linear-gradient(to right, red,orange,red,orange,red,orange,red);
+  font-size: 44px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  text-underline-position: inherit;
+  padding: 20px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 6px 6px 0px black;
+}
+
+.welcome{
+  text-align: center;
+}
+
+.container-button{
+  width: 800px;
+  text-align: center;
+  margin-left: 400px;
+}
+
+.offset{
+  width: 100px;
+  height: 20px;
+  margin: 40px;
+  margin-left: 200px;
+  margin-top: 20px;
+  float: center;
+  border: 5px red inset;
+}
+
+.message{
+  height: 200px;
+  width: 400px;
+  float: left;
+  background: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 20px red inset;
+  margin: 30px;
+  margin-left: 200px;
+  margin-top: 10px;
+  padding: 10px;
+
+}
+
+.result{
+  height: 200px;
+  width: 400px;
+  float: center;
+  background: white;
+  border: 20px red inset;
+  margin: 40px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.button{
+  border: 1px blue inset;
+  outline: black;
+  background: rgb(190, 190, 240);
+  background-image: linear-gradient(white,red);
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  float: left;
+  margin: 30px;
+  margin-top: 5px;
+  bottom: 10px;
+  position:left; 
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.button:hover{
+  background: #08038C;
+  color: #f6f6f6;
+}  
+
+.buttonClear{
+  float: right;
+  position: right;
 }

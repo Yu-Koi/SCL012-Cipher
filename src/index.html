@@ -1,22 +1,41 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nerymar</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>UNIDOS POR CHILE</h1>
+
+    <div class="welcome">
+      <h2>Codificador y decodificador de Mensajes</h2><br/>  
+      <p>!!!Hola¡¡¡ Bienvenido, aca podrás codificar y descifrar mensajes con tus compañeros para comunicarse de forma segura en estos tiempos de lucha</p>
+      <p>¿Cómo? Es muy fácil debes elegir un número de desplazamiento, que solo tú y tu compañero conoceran</p>
+      <p>Ejemplo: la letra "A" con un deplazamiento de 3 se moverá 3 espacios en el abecedario hacia adelante ---> <b>A, B, C, D...</b> Resultado la letra "D" </p>
     </div>
-    <div>
-      <input type="text" placeholder="Ingresa tu Nombre" id="name">
-      <button id="save">SAVE</button>
-    </div>
-    <div id="show">
       
+      <div class="container-offset">
+        <input type="text" name=offset id="offset" class="offset" placeholder="Ingresa el numero de desplazamientos"> Nº Desplazamientos
+      </div>
+
+      <div class="container-message">
+          <textarea id="message" class="message" cols="50%" rows="10" placeholder="Ingresa tu message"></textarea>
+      </div>
+     
+      <div class="container-result">
+         <textarea id="result" class="result" cols="50%" rows="10"></textarea>
+      </div>
+      <br>
+      <div class="container-button">
+        <button type="submit" id="buttonEncode" class="button">CIFRAR</button>
+        <button type="submit" id="buttonDecode" class="button">DESCIFRAR</button>
+        <button class="button" onclick="location.reload();">LIMPIAR</button>
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+</body>
 </html>
+
+<script src="index.js"></script>
+<script src="cipher.js"></script>
